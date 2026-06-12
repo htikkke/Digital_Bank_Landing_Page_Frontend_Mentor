@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme {
+  --color-white-color: hsl(0, 100%, 100%);
+  --color-cyan-color: hsl(192, 69%, 51%);
+  --color-green-color: hsl(136, 64%, 51%);
+  --color-dark-grey: hsl(233, 8%, 62%);
+  --color-light-grey: hsl(220, 16%, 96%);
+  --color-dark-blue: hsl(233, 26%, 24%);
+  --font-sans: "Public Sans", sans-serif;
+  --background-image-custom-gradient: linear-gradient(
+    200deg,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+}
