@@ -23,18 +23,43 @@
     >
       <section
         id="nav-container"
-        class="row-[1/2] flex flex-row h-30 items-center justify-start gap-32 pl-32"
+        class="row-[1/2] flex flex-row h-20 items-center justify-start gap-32 pl-32"
       >
         <img src="/src/images/logo-dark.svg" class="w-50 h-50" />
         <nav class="flex gap-8 text-dark-grey font-medium cursor-pointer">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>
+          <a href="#" class="relative transition-colors duration-300 group"
+            >Home
+            <span
+              class="absolute top-12 left-0 w-full h-1 bg-custom-gradient scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+            ></span>
+          </a>
+          <a href="#" class="relative transition-colors duration-300 group"
+            >About
+            <span
+              class="absolute top-12 left-0 w-full h-1 bg-custom-gradient scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+            ></span>
+          </a>
+          <a href="#" class="relative transition-colors duration-300 group"
+            >Contact
+            <span
+              class="absolute top-12 left-0 w-full h-1 bg-custom-gradient scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+            ></span>
+          </a>
+          <a href="#" class="relative transition-colors duration-300 group"
+            >Blog
+            <span
+              class="absolute top-12 left-0 w-full h-1 bg-custom-gradient scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+            ></span>
+          </a>
+          <a href="#" class="relative transition-colors duration-300 group"
+            >Careers
+            <span
+              class="absolute top-12 left-0 w-full h-1 bg-custom-gradient scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+            ></span>
+          </a>
         </nav>
         <button
-          class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer"
+          class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover"
         >
           Request Invite
         </button>
@@ -54,7 +79,7 @@
             and much more.
           </p>
           <button
-            class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer"
+            class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover"
           >
             Request Invite
           </button>
@@ -134,7 +159,9 @@
               class="w-full h-full object-fill rounded-tr-xl rounded-tl-xl"
             />
             <p class="text-dark-grey text-sm pl-3">By Claire Robinson</p>
-            <p class="text-xl pr-10 pl-3">
+            <p
+              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color"
+            >
               Receive money in any currency with no fees
             </p>
             <p
@@ -152,7 +179,9 @@
               class="w-full h-full object-fill rounded-tr-xl rounded-tl-xl"
             />
             <p class="text-dark-grey text-sm pl-3">By Wilson Hutton</p>
-            <p class="text-xl pr-10 pl-3">
+            <p
+              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color"
+            >
               Treat yourself without worrying about money
             </p>
             <p
@@ -170,7 +199,9 @@
               class="w-full h-full object-fill rounded-tr-xl rounded-tl-xl"
             />
             <p class="text-dark-grey text-sm pl-3">By Wilson Hutton</p>
-            <p class="text-xl pr-10 pl-3">
+            <p
+              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color"
+            >
               Take your Digitalbank card wherever you go
             </p>
             <p
@@ -188,7 +219,9 @@
               class="w-full h-full object-fill rounded-tr-xl rounded-tl-xl"
             />
             <p class="text-dark-grey text-sm pl-3">By Claire Robinson</p>
-            <p class="text-xl pr-10 pl-3">
+            <p
+              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color"
+            >
               Our invite-only Beta accounts are now live!
             </p>
             <p
@@ -209,7 +242,7 @@
           <div>
             <img src="/src/images/logo-light.svg" />
           </div>
-          <div class="flex flex-row gap-4">
+          <div class="flex flex-row gap-4 cursor-pointer">
             <img src="/src/images/icon-facebook.svg" />
             <img src="/src/images/icon-youtube.svg" />
             <img src="/src/images/icon-twitter.svg" />
@@ -218,20 +251,22 @@
           </div>
         </div>
         <div class="flex flex-row items-center justify-start gap-28">
-          <div class="flex flex-col gap-4 text-gray-50 text-sm">
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-            <a href="#"> Blog</a>
+          <div
+            class="flex flex-col gap-4 text-gray-50 text-sm cursor-pointer transition-colors"
+          >
+            <a href="#" class="hover:text-green-color">About Us</a>
+            <a href="#" class="hover:text-green-color">Contact</a>
+            <a href="#" class="hover:text-green-color"> Blog</a>
           </div>
-          <div class="flex flex-col gap-4 text-gray-50 text-sm">
-            <a href="#"> Careers</a>
-            <a href="#"> Support</a>
-            <a href="#"> Privacy Policy</a>
+          <div class="flex flex-col gap-4 text-gray-50 text-sm cursor-pointer">
+            <a href="#" class="hover:text-green-color"> Careers</a>
+            <a href="#" class="hover:text-green-color"> Support</a>
+            <a href="#" class="hover:text-green-color"> Privacy Policy</a>
           </div>
         </div>
         <div class="flex flex-col items-end pr-44">
           <button
-            class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer"
+            class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover"
           >
             Request Invite
           </button>
