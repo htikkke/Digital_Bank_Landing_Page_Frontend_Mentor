@@ -19,14 +19,19 @@
   <body class="w-full min-h-screen">
     <div
       id="main-container"
-      class="w-full h-full bg-white-color grid grid-rows-[auto,auto,auto,auto,auto] font-sans"
+      class="min-w-screen h-full bg-white-color grid grid-rows-[auto,auto,auto,auto,auto] font-sans"
     >
       <section
         id="nav-container"
-        class="row-[1/2] flex flex-row h-20 items-center justify-start gap-32 pl-32"
+        class="row-[1/2] flex flex-row h-20 items-center justify-start gap-32 pl-32 max-[1025px]:pl-14 max-[770px]:gap-14"
       >
-        <img src="/src/images/logo-dark.svg" class="w-50 h-50" />
-        <nav class="flex gap-8 text-dark-grey font-medium cursor-pointer">
+        <img
+          src="/src/images/logo-dark.svg"
+          class="w-50 h-50 max-[770px]:w-30"
+        />
+        <nav
+          class="flex gap-8 text-dark-grey font-medium cursor-pointer max-[770px]:gap-3 max-[770px]:text-xs"
+        >
           <a href="#" class="relative transition-colors duration-300 group"
             >Home
             <span
@@ -59,7 +64,7 @@
           </a>
         </nav>
         <button
-          class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover"
+          class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover max-[1025px]:py-2.5 max-[770px]:text-xs max-[770px]:py-2"
         >
           Request Invite
         </button>
@@ -68,39 +73,45 @@
         id="hero-container"
         class="h-auto row-[2/3] grid grid-cols-2 relative bg-gray-50"
       >
-        <div class="flex flex-col justify-center items-start gap-9 pl-32">
-          <h1 class="font-normal text-7xl leading-20">
+        <div
+          class="flex flex-col justify-center items-start gap-9 pl-32 max-[1025px]:pl-14"
+        >
+          <h1
+            class="font-normal text-7xl leading-14 max-[1025px]:text-5xl max-[770px]:text-4xl max-[770px]:leading-12"
+          >
             Next generation<br />
             digital banking
           </h1>
-          <p class="text-dark-grey font-medium">
+          <p class="text-dark-grey text-base max-[770px]:text-sm">
             Take your financial life online. Your Digitalbank <br />account will
             be a one-stop-shop for spending, saving, <br />budgeting, investing,
             and much more.
           </p>
           <button
-            class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover"
+            class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover max-[770px]:py-2"
           >
             Request Invite
           </button>
         </div>
         <div
-          class="bg-[url(/src/images/bg-intro-desktop.svg)] relative bg-left bg-no-repeat h-130 scrollbar-none"
+          class="bg-[url(/src/images/bg-intro-desktop.svg)] relative bg-left bg-no-repeat h-130 scrollbar-none max-[1025px]:h-105 max-[770px]:h-96"
         >
           <img
             src="/src/images/image-mockups.png"
-            class="absolute w-160 -mt-39 left-20"
+            class="absolute w-160 -mt-39 left-20 max-[1025px]:left-0 max-[1025px]:-mt-31 max-[1025px]:w-130 max-[770px]:-mt-23 max-[770px]:w-96"
             style="clip-path: inset(20% 0 0 0)"
             alt="Mockups"
           />
         </div>
       </section>
       <section
-        class="bg-gray-100 h-auto grid grid-rows-2 pl-32 gap-14"
+        class="bg-gray-100 h-auto grid grid-rows-2 pl-32 gap-14 max-[1025px]:pl-14 max-[1025px]:gap-10 max-[770px]:grid-rows-[auto_auto]"
         id="choose-container"
       >
-        <div class="pt-28 flex flex-col justify-center items-start gap-7">
-          <h1 class="font-normal text-5xl leading-20">
+        <div
+          class="pt-28 flex flex-col justify-center items-start gap-7 max-[1025px]:pt-8 max-[1025px]:gap-4 max-[770px]:pt-5"
+        >
+          <h1 class="font-normal text-5xl leading-20 max-[1025px]:text-4xl">
             Why choose Digitalbank?
           </h1>
           <p class="text-dark-grey font-medium">
@@ -109,7 +120,9 @@
             Control your finances like never before.
           </p>
         </div>
-        <div class="grid grid-cols-4 gap-8 pr-20">
+        <div
+          class="grid grid-cols-4 gap-8 pr-20 max-[1025px]:pr-10 max-[1025px]:pb-10"
+        >
           <div class="pr-10 flex flex-col justify-evenly">
             <img src="/src/images/icon-online.svg" class="w-16" />
             <h3 class="text-xl">Online Banking</h3>
@@ -146,21 +159,21 @@
       </section>
       <section class="bg-gray-50 h-auto pb-20" id="article-container">
         <div>
-          <h1 class="font-normal text-3xl pt-10 pb-10 pl-32">
+          <h1 class="font-normal text-3xl pt-10 pb-10 pl-32 max-[1025px]:pl-14">
             Latest Articles
           </h1>
         </div>
-        <div class="grid grid-cols-4 pl-32">
+        <div class="grid grid-cols-4 pl-32 max-[1025px]:pl-14">
           <div
-            class="mr-10 flex flex-col justify-evenly gap-5 bg-white-color rounded-xl"
+            class="mr-10 flex flex-col gap-3 bg-white-color rounded-xl max-[770px]:mr-3"
           >
             <img
               src="/src/images/image-currency.jpg"
-              class="w-full h-full object-fill rounded-tr-xl rounded-tl-xl"
+              class="w-full h-48 object-cover rounded-tr-xl rounded-tl-xl"
             />
             <p class="text-dark-grey text-sm pl-3">By Claire Robinson</p>
             <p
-              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color"
+              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color max-[1025px]:text-lg"
             >
               Receive money in any currency with no fees
             </p>
@@ -172,15 +185,15 @@
             </p>
           </div>
           <div
-            class="mr-10 flex flex-col justify-evenly gap-5 bg-white-color rounded-xl"
+            class="mr-10 flex flex-col gap-3 bg-white-color rounded-xl max-[770px]:mr-3"
           >
             <img
               src="/src/images/image-restaurant.jpg"
-              class="w-full h-full object-fill rounded-tr-xl rounded-tl-xl"
+              class="w-full h-48 object-cover rounded-tr-xl rounded-tl-xl"
             />
             <p class="text-dark-grey text-sm pl-3">By Wilson Hutton</p>
             <p
-              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color"
+              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color max-[1025px]:text-lg"
             >
               Treat yourself without worrying about money
             </p>
@@ -192,15 +205,15 @@
             </p>
           </div>
           <div
-            class="mr-10 flex flex-col justify-evenly gap-5 bg-white-color rounded-xl"
+            class="mr-10 flex flex-col gap-3 bg-white-color rounded-xl max-[770px]:mr-3"
           >
             <img
               src="/src/images/image-plane.jpg"
-              class="w-full h-full object-fill rounded-tr-xl rounded-tl-xl"
+              class="w-full h-48 object-cover rounded-tr-xl rounded-tl-xl"
             />
             <p class="text-dark-grey text-sm pl-3">By Wilson Hutton</p>
             <p
-              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color"
+              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color max-[1025px]:text-lg"
             >
               Take your Digitalbank card wherever you go
             </p>
@@ -212,15 +225,15 @@
             </p>
           </div>
           <div
-            class="mr-10 flex flex-col justify-evenly gap-5 bg-white-color rounded-xl"
+            class="mr-10 flex flex-col gap-3 bg-white-color rounded-xl max-[770px]:mr-3"
           >
             <img
               src="/src/images/image-confetti.jpg"
-              class="w-full h-full object-fill rounded-tr-xl rounded-tl-xl"
+              class="w-full h-48 object-cover rounded-tr-xl rounded-tl-xl"
             />
             <p class="text-dark-grey text-sm pl-3">By Claire Robinson</p>
             <p
-              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color"
+              class="text-xl pr-10 pl-3 cursor-pointer transition-colors hover:text-green-color max-[1025px]:text-lg"
             >
               Our invite-only Beta accounts are now live!
             </p>
@@ -238,11 +251,11 @@
         class="h-50 bg-dark-blue grid grid-cols-3 items-center"
         id="footer container"
       >
-        <div class="pl-32 flex flex-col gap-14">
+        <div class="pl-32 flex flex-col gap-14 max-[1025px]:pl-14">
           <div>
             <img src="/src/images/logo-light.svg" />
           </div>
-          <div class="flex flex-row gap-4 cursor-pointer">
+          <div class="flex flex-row gap-4 cursor-pointer max-[770px]:gap-2">
             <img src="/src/images/icon-facebook.svg" />
             <img src="/src/images/icon-youtube.svg" />
             <img src="/src/images/icon-twitter.svg" />
@@ -250,7 +263,9 @@
             <img src="/src/images/icon-instagram.svg" />
           </div>
         </div>
-        <div class="flex flex-row items-center justify-start gap-28">
+        <div
+          class="flex flex-row items-center justify-start gap-28 max-[770px]:gap-10 max-[770px]:justify-center"
+        >
           <div
             class="flex flex-col gap-4 text-gray-50 text-sm cursor-pointer transition-colors"
           >
@@ -264,13 +279,15 @@
             <a href="#" class="hover:text-green-color"> Privacy Policy</a>
           </div>
         </div>
-        <div class="flex flex-col items-end pr-44">
+        <div
+          class="flex flex-col items-end pr-44 max-[1025px]:pr-20 max-[770px]:pr-5"
+        >
           <button
-            class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover"
+            class="bg-custom-gradient py-3 px-6 rounded-3xl text-white-color text-sm cursor-pointer transition-all duration-300 hover:bg-gradient-hover max-[1025px]:py-2"
           >
             Request Invite
           </button>
-          <p class="mt-5 text-dark-grey text-sm">
+          <p class="mt-5 text-dark-grey text-sm max-[770px]:text-xs">
             © Digitalbank. All Rights Reserved
           </p>
         </div>
